@@ -34,21 +34,29 @@ html {
     height: auto;
   }
   :root {
-    --font-family: "Fraunces ", sans-serif;
-    --second-family: "Barlow", sans-serif;
-    --third-family: "Fraunces", sans-serif;
+    --blue: #1074eb;
+    --orange: #f90;
+    --red: #e92626;
+    --black: #383838;
+    --gray-strong: #9c9c9c;
+    --light-gray: #f7f7f7;
+    --white: #fff;
+    --gray: #c9c9c9;
+  }
+  :root {
+    --font-family: "Lato", sans-serif;
   }
   body {
     overflow-x: hidden;
-    font-family: "Barlow", sans-serif;
+    font-family: "Lato", sans-serif;
     margin: 0;
    
   }
   
   .container {
-    max-width: 1334px;
+    max-width: 1160px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
