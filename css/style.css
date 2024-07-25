@@ -839,4 +839,65 @@ body {
   .serves_row {
     display: block;
   }
+}
+.fridge_ads {
+  padding-top: 56px;
+  padding-bottom: 68px;
+}
+
+.firdge_ads_block {
+  background-color: var(--blue);
+  padding: 179px 67px 50px 19px;
+  position: relative;
+}
+
+.fridge_ads_title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--white);
+  margin-bottom: 47px;
+  width: 271px;
+}
+
+.hr {
+  width: 100px;
+  height: 1px;
+  background-color: var(--white);
+  margin-bottom: 33px;
+  margin-left: 0;
+}
+
+.fridge_ads_btn {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--blue);
+  background: var(--white);
+  border-radius: 3px;
+  padding: 16px;
+  border: none;
+  white-space: nowrap;
+}
+
+.firdge_ads_block::before {
+  content: "";
+  background-image: url(../img/fridge_top.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 243px;
+  height: 243px;
+  top: -18px;
+  left: -50px;
+}
+
+.firdge_ads_block::after {
+  content: "";
+  background-image: url(../img/fridge.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 269px;
+  height: 269px;
+  right: -82px;
+  bottom: -68px;
 }/*# sourceMappingURL=style.css.map */
