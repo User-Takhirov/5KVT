@@ -4,7 +4,10 @@
 }
 
 .firdge_ads_block {
+    // background-image: url(../img/fridge_mb.svg);
     background-color: var(--blue);
+    background-repeat: no-repeat;
+    width: 100%;
     padding: 179px 67px 50px 19px;
     position: relative;
 }
@@ -25,6 +28,7 @@
     margin-bottom: 33px;
     margin-left: 0;
 }
+
 .fridge_ads_btn {
     font-family: var(--font-family);
     font-weight: 600;
@@ -45,15 +49,55 @@
     width: 243px;
     height: 243px;
     top: -18px;
-    left: -50px;
+    left: -19px;
 }
-.firdge_ads_block::after{
+
+.firdge_ads_block::after {
     content: "";
     background-image: url(../img/fridge.svg);
     background-repeat: no-repeat;
     position: absolute;
     width: 269px;
     height: 269px;
-    right: -82px;
+    right: -100px;
     bottom: -68px;
 }
+
+@media screen and (min-width:768px) {
+    .firdge_ads_block {
+        background-image: url(../img/fridge.jpg);
+        width: 100%;
+        padding: 50px;
+    }
+
+    .fridge_inner_block {
+        display: grid;
+        justify-content: center;
+    }
+
+    .firdge_ads_block::after {
+        right: 0;
+        top: 18px;
+    }
+
+    .firdge_ads_block::before {
+        top: 14px;
+        right: 81px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .fridge_ads {
+        padding: 80px 0 100px 0;
+    }
+
+    .firdge_ads_block::after {
+        right: 126px;
+        top: 18px;
+    }
+
+    .firdge_ads_block::before {
+        top: 50px;
+        left: 81px;
+    }
+}   
