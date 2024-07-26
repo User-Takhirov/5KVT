@@ -143,7 +143,7 @@
 @media screen and (min-width: 768px) {
     .serves_block {
         grid-template-columns: repeat(3, 200px);
-        gap: 100px;
+        gap: 30px;
     }
 
     .serves_title:nth-child(4) {
